@@ -10,6 +10,9 @@ export class SubcategoryModel {
 
   @Prop({ type: String, required: true })
   name: string;
+
+  @Prop({ type: Number, required: true })
+  categoryId: number;
 }
 
 export type SubcategoryDocument = SubcategoryModel & Document;

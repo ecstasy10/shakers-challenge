@@ -27,6 +27,6 @@ export class MongoSubcategoryRepository implements ISubcategoryRepository {
       return [];
     }
 
-    return docs.map((d) => new Subcategory(d._id, d.name));
+    return docs.map((d) => new Subcategory(d._id, d.name, d.categoryId));
   }
 }
