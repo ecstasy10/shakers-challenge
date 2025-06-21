@@ -8,10 +8,7 @@ import { IndustryModel } from './industry.schema';
 
 @Injectable()
 export class MongoIndustryRepository implements IIndustryRepository {
-  private readonly industryCollection: ICollection<{
-    _id: number;
-    name: string;
-  }>;
+  private readonly industryCollection: ICollection<IndustryModel>;
 
   constructor(
     @Inject('DATABASE')

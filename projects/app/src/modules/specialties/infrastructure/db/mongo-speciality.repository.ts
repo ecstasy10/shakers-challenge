@@ -8,10 +8,7 @@ import { SpecialityModel } from './speciality.schema';
 
 @Injectable()
 export class MongoSpecialityRepository implements ISpecialityRepository {
-  private readonly specialityCollection: ICollection<{
-    _id: number;
-    name: string;
-  }>;
+  private readonly specialityCollection: ICollection<SpecialityModel>;
 
   constructor(
     @Inject('DATABASE')

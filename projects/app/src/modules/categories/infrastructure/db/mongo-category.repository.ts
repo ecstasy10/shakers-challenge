@@ -8,10 +8,7 @@ import { CategoryModel } from './category.schema';
 
 @Injectable()
 export class MongoCategoryRepository implements ICategoryRepository {
-  private readonly categoryCollection: ICollection<{
-    _id: number;
-    name: string;
-  }>;
+  private readonly categoryCollection: ICollection<CategoryModel>;
 
   constructor(
     @Inject('DATABASE')

@@ -8,7 +8,7 @@ import { SkillModel } from './skill.schema';
 
 @Injectable()
 export class MongoSkillRepository implements ISkillRepository {
-  private readonly skillCollection: ICollection<{ _id: number; name: string }>;
+  private readonly skillCollection: ICollection<SkillModel>;
 
   constructor(
     @Inject('DATABASE')

@@ -8,10 +8,7 @@ import { SubcategoryModel } from './subcategory.schema';
 
 @Injectable()
 export class MongoSubcategoryRepository implements ISubcategoryRepository {
-  private readonly subcategoryCollection: ICollection<{
-    _id: number;
-    name: string;
-  }>;
+  private readonly subcategoryCollection: ICollection<SubcategoryModel>;
 
   constructor(
     @Inject('DATABASE')
