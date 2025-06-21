@@ -1,0 +1,72 @@
+'use strict';
+
+const db = db.getSiblingDB('shakersdb');
+
+if (!db.getCollectionNames().includes('skills')) {
+    db.createCollection('skills');
+}
+
+const skills = [
+    {"_id": 1, "name": "Python"},
+    {"_id": 2, "name": "Java"},
+    {"_id": 3, "name": "JavaScript"},
+    {"_id": 4, "name": "C++"},
+    {"_id": 5, "name": "C#"},
+    {"_id": 6, "name": "Go"},
+    {"_id": 7, "name": "Ruby"},
+    {"_id": 8, "name": "PHP"},
+    {"_id": 9, "name": "Swift"},
+    {"_id": 10, "name": "Kotlin"},
+    {"_id": 11, "name": "TypeScript"},
+    {"_id": 12, "name": "HTML"},
+    {"_id": 13, "name": "CSS"},
+    {"_id": 14, "name": "SQL"},
+    {"_id": 15, "name": "NoSQL"},
+    {"_id": 16, "name": "React"},
+    {"_id": 17, "name": "Angular"},
+    {"_id": 18, "name": "Vue.js"},
+    {"_id": 19, "name": "Node.js"},
+    {"_id": 20, "name": "Django"},
+    {"_id": 21, "name": "Flask"},
+    {"_id": 22, "name": "Spring Boot"},
+    {"_id": 23, "name": "ASP.NET"},
+    {"_id": 24, "name": "Docker"},
+    {"_id": 25, "name": "Kubernetes"},
+    {"_id": 26, "name": "AWS"},
+    {"_id": 27, "name": "Azure"},
+    {"_id": 28, "name": "Google Cloud Platform (GCP)"},
+    {"_id": 29, "name": "Git"},
+    {"_id": 30, "name": "CI/CD"},
+    {"_id": 31, "name": "RESTful APIs"},
+    {"_id": 32, "name": "GraphQL"},
+    {"_id": 33, "name": "Microservices"},
+    {"_id": 34, "name": "Machine Learning"},
+    {"_id": 35, "name": "Deep Learning"},
+    {"_id": 36, "name": "Natural Language Processing (NLP)"},
+    {"_id": 37, "name": "Computer Vision"},
+    {"_id": 38, "name": "Data Science"},
+    {"_id": 39, "name": "Big Data"},
+    {"_id": 40, "name": "Apache Spark"},
+    {"_id": 41, "name": "Hadoop"},
+    {"_id": 42, "name": "Kafka"},
+    {"_id": 43, "name": "Blockchain"},
+    {"_id": 44, "name": "Cybersecurity"},
+    {"_id": 45, "name": "Penetration Testing"},
+    {"_id": 46, "name": "Network Security"},
+    {"_id": 47, "name": "DevOps"},
+    {"_id": 48, "name": "Agile Methodologies"},
+    {"_id": 49, "name": "Scrum"},
+    {"_id": 50, "name": "Kanban"},
+    {"_id": 51, "name": "UI/UX Design"},
+    {"_id": 52, "name": "Figma"},
+    {"_id": 53, "name": "Sketch"},
+    {"_id": 54, "name": "Adobe XD"},
+    {"_id": 55, "name": "Automated Testing"},
+    {"_id": 56, "name": "Selenium"},
+    {"_id": 57, "name": "Jira"},
+    {"_id": 58, "name": "Confluence"},
+    {"_id": 59, "name": "Tableau"},
+    {"_id": 60, "name": "Power BI"}
+];
+
+db.skills.insertMany(skills);

@@ -1,0 +1,72 @@
+'use strict';
+
+const db = db.getSiblingDB('shakersdb');
+
+if (!db.getCollectionNames().includes('industries')) {
+    db.createCollection('industries');
+}
+
+const industries = [
+    {"_id": 1, "name": "Software Development"},
+    {"_id": 2, "name": "Financial Services"},
+    {"_id": 3, "name": "Healthcare"},
+    {"_id": 4, "name": "Retail"},
+    {"_id": 5, "name": "E-commerce"},
+    {"_id": 6, "name": "Telecommunications"},
+    {"_id": 7, "name": "Manufacturing"},
+    {"_id": 8, "name": "Automotive"},
+    {"_id": 9, "name": "Education"},
+    {"_id": 10, "name": "Government"},
+    {"_id": 11, "name": "Aerospace & Defense"},
+    {"_id": 12, "name": "Energy"},
+    {"_id": 13, "name": "Utilities"},
+    {"_id": 14, "name": "Media & Entertainment"},
+    {"_id": 15, "name": "Marketing & Advertising"},
+    {"_id": 16, "name": "Real Estate"},
+    {"_id": 17, "name": "Travel & Hospitality"},
+    {"_id": 18, "name": "Logistics & Supply Chain"},
+    {"_id": 19, "name": "Agriculture"},
+    {"_id": 20, "name": "Pharmaceuticals"},
+    {"_id": 21, "name": "Biotechnology"},
+    {"_id": 22, "name": "Construction"},
+    {"_id": 23, "name": "Consulting"},
+    {"_id": 24, "name": "Non-profit"},
+    {"_id": 25, "name": "Gambling & Casinos"},
+    {"_id": 26, "name": "Sports"},
+    {"_id": 27, "name": "Food & Beverage"},
+    {"_id": 28, "name": "Fashion"},
+    {"_id": 29, "name": "Art & Design"},
+    {"_id": 30, "name": "Environmental Services"},
+    {"_id": 31, "name": "Information Technology (IT) Services"},
+    {"_id": 32, "name": "Cybersecurity"},
+    {"_id": 33, "name": "Data Analytics"},
+    {"_id": 34, "name": "Artificial Intelligence (AI)"},
+    {"_id": 35, "name": "Fintech"},
+    {"_id": 36, "name": "Edtech"},
+    {"_id": 37, "name": "Healthtech"},
+    {"_id": 38, "name": "Agritech"},
+    {"_id": 39, "name": "Clean Energy"},
+    {"_id": 40, "name": "Space Technology"},
+    {"_id": 41, "name": "Robotics"},
+    {"_id": 42, "name": "Augmented Reality (AR)"},
+    {"_id": 43, "name": "Virtual Reality (VR)"},
+    {"_id": 44, "name": "Gaming"},
+    {"_id": 45, "name": "Social Media"},
+    {"_id": 46, "name": "Cloud Computing"},
+    {"_id": 47, "name": "Quantum Computing"},
+    {"_id": 48, "name": "Biometrics"},
+    {"_id": 49, "name": "Nanotechnology"},
+    {"_id": 50, "name": "Internet of Things (IoT)"},
+    {"_id": 51, "name": "Wearable Technology"},
+    {"_id": 52, "name": "Autonomous Vehicles"},
+    {"_id": 53, "name": "Drone Technology"},
+    {"_id": 54, "name": "Renewable Energy"},
+    {"_id": 55, "name": "Water Management"},
+    {"_id": 56, "name": "Waste Management"},
+    {"_id": 57, "name": "Smart Cities"},
+    {"_id": 58, "name": "Biotechnology Research"},
+    {"_id": 59, "name": "Medical Devices"},
+    {"_id": 60, "name": "Digital Marketing"}
+];
+
+db.industries.insertMany(industries);

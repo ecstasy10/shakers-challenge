@@ -1,0 +1,72 @@
+'use strict';
+
+const db = db.getSiblingDB('shakersdb');
+
+if (!db.getCollectionNames().includes('specialties')) {
+    db.createCollection('specialties');
+}
+
+const specialties = [
+    {"_id": 1, "name": "Full Stack Developer"},
+    {"_id": 2, "name": "Frontend Developer"},
+    {"_id": 3, "name": "Backend Developer"},
+    {"_id": 4, "name": "DevOps Engineer"},
+    {"_id": 5, "name": "Cloud Engineer"},
+    {"_id": 6, "name": "Data Scientist"},
+    {"_id": 7, "name": "Machine Learning Engineer"},
+    {"_id": 8, "name": "AI Engineer"},
+    {"_id": 9, "name": "Big Data Engineer"},
+    {"_id": 10, "name": "Database Administrator (DBA)"},
+    {"_id": 11, "name": "Network Engineer"},
+    {"_id": 12, "name": "Security Engineer"},
+    {"_id": 13, "name": "Cybersecurity Analyst"},
+    {"_id": 14, "name": "QA Engineer"},
+    {"_id": 15, "name": "Automation Engineer"},
+    {"_id": 16, "name": "Mobile Developer (iOS)"},
+    {"_id": 17, "name": "Mobile Developer (Andro_id)"},
+    {"_id": 18, "name": "UI/UX Designer"},
+    {"_id": 19, "name": "Product Manager (Tech)"},
+    {"_id": 20, "name": "Technical Architect"},
+    {"_id": 21, "name": "Solutions Architect"},
+    {"_id": 22, "name": "System Administrator"},
+    {"_id": 23, "name": "Scrum Master"},
+    {"_id": 24, "name": "Agile Coach"},
+    {"_id": 25, "name": "Release Engineer"},
+    {"_id": 26, "name": "Site Reliability Engineer (SRE)"},
+    {"_id": 27, "name": "Embedded Systems Engineer"},
+    {"_id": 28, "name": "Game Developer"},
+    {"_id": 29, "name": "Blockchain Developer"},
+    {"_id": 30, "name": "Salesforce Developer"},
+    {"_id": 31, "name": "SAP Consultant"},
+    {"_id": 32, "name": "ERP Consultant"},
+    {"_id": 33, "name": "CRM Consultant"},
+    {"_id": 34, "name": "Business Intelligence (BI) Developer"},
+    {"_id": 35, "name": "Data Analyst"},
+    {"_id": 36, "name": "ETL Developer"},
+    {"_id": 37, "name": "Cloud Security Engineer"},
+    {"_id": 38, "name": "DevSecOps Engineer"},
+    {"_id": 39, "name": "Technical Writer"},
+    {"_id": 40, "name": "IT Project Manager"},
+    {"_id": 41, "name": "IT Support Specialist"},
+    {"_id": 42, "name": "Network Architect"},
+    {"_id": 43, "name": "Security Architect"},
+    {"_id": 44, "name": "Lead Developer"},
+    {"_id": 45, "name": "Principal Engineer"},
+    {"_id": 46, "name": "Software Engineer in Test (SDET)"},
+    {"_id": 47, "name": "Vulnerability Analyst"},
+    {"_id": 48, "name": "Inc_ident Response Analyst"},
+    {"_id": 49, "name": "Forensics Analyst"},
+    {"_id": 50, "name": "IT Auditor"},
+    {"_id": 51, "name": "Robotics Engineer"},
+    {"_id": 52, "name": "AR/VR Developer"},
+    {"_id": 53, "name": "Bioinformatics Engineer"},
+    {"_id": 54, "name": "Quant Developer"},
+    {"_id": 55, "name": "Low-Code/No-Code Developer"},
+    {"_id": 56, "name": "Digital Forensics Investigator"},
+    {"_id": 57, "name": "Computer Forensics Examiner"},
+    {"_id": 58, "name": "Malware Analyst"},
+    {"_id": 59, "name": "Penetration Tester"},
+    {"_id": 60, "name": "Security Consultant"}
+];
+
+db.specialties.insertMany(specialties);
