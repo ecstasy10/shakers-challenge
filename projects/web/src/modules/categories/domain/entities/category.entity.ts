@@ -2,7 +2,7 @@
 
 export class Category {
   constructor(
-    public readonly id: number,
+    public readonly _id: number,
     public readonly name: string,
   ) {}
 }

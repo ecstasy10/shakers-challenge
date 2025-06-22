@@ -20,6 +20,6 @@ export class IndustryHttpRepository implements IIndustryRepository {
       return [];
     }
 
-    return data.map((d) => new Industry(d.id, d.name));
+    return data.map((d) => new Industry(d._id, d.name));
   }
 }

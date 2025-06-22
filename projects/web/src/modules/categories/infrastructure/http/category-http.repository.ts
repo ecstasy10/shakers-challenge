@@ -20,6 +20,6 @@ export class CategoryHttpRepository implements ICategoryRepository {
       return [];
     }
 
-    return data.map((d) => new Category(d.id, d.name));
+    return data.map((d) => new Category(d._id, d.name));
   }
 }

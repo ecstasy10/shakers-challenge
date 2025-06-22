@@ -20,6 +20,6 @@ export class SkillHttpRepository implements ISkillRepository {
       return [];
     }
 
-    return data.map((d) => new Skill(d.id, d.name));
+    return data.map((d) => new Skill(d._id, d.name));
   }
 }

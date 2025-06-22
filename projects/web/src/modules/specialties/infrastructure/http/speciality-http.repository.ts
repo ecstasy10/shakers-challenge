@@ -20,6 +20,6 @@ export class SpecialityHttpRepository implements ISpecialityRepository {
       return [];
     }
 
-    return data.map((d) => new Speciality(d.id, d.name));
+    return data.map((d) => new Speciality(d._id, d.name));
   }
 }
